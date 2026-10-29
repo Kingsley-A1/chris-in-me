@@ -126,7 +126,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
 .visit-points span{font-size:10px;color:#849482;font-weight:750}
 .gathering-home{background:#f6f5ef}
 .gathering-card .card-image{aspect-ratio:1.6}
-.gathering-card-body{display:flex;justify-content:space-between;gap:15px;padding-top:23px}
+.gathering-card-body{display:block;min-width:0;padding-top:23px}
 .gathering-card-body .card-title h3{font-size:clamp(30px,3.3vw,49px)}
 .gathering-card-body .card-title{width:100%}
 .image-caption{position:absolute;bottom:19px;left:22px;font-size:10px;letter-spacing:.12em;font-weight:750;color:white;text-shadow:0 1px 5px #111}
