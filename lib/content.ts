@@ -14,7 +14,7 @@ export const site = {
 const photo=(id:string,w=1400)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=82`;
 
 export const media = {
-  hero: photo("photo-1553073520-80b5ad5ec870",2200),
+  hero: photo("photo-1438232992991-995b7058bbb3",2200),
   worship: photo("photo-1438232992991-995b7058bbb3",1600),
   community: photo("photo-1529156069898-49953e39b3ac",1400),
   prayer: photo("photo-1504052434569-70ad5836ab65",1400),
