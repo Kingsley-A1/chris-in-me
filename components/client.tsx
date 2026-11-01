@@ -1,6 +1,6 @@
 
 "use client";
-import {useEffect,useMemo,useState} from "react";
+import {useEffect,useMemo,useRef,useState} from "react";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import {ArrowUpRight,ArrowRight,Menu,X,Search,CheckCircle2} from "lucide-react";
@@ -9,11 +9,13 @@ import {Logo} from "@/components/parts";
 
 export function Header(){
  const [open,setOpen]=useState(false),[scrolled,setScrolled]=useState(false),path=usePathname();
+ const menuButton=useRef<HTMLButtonElement>(null);
  useEffect(()=>{setOpen(false)},[path]);
  useEffect(()=>{const f=()=>setScrolled(window.scrollY>35);f();window.addEventListener("scroll",f,{passive:true});return()=>window.removeEventListener("scroll",f)},[]);
  useEffect(()=>{document.body.classList.toggle("nav-open",open);return()=>document.body.classList.remove("nav-open")},[open]);
+ useEffect(()=>{if(!open)return;const onKeyDown=(event:KeyboardEvent)=>{if(event.key==="Escape"){setOpen(false);menuButton.current?.focus();}};document.addEventListener("keydown",onKeyDown);return()=>document.removeEventListener("keydown",onKeyDown)},[open]);
  return <header className={"site-header"+(scrolled||open?" is-scrolled":"")}>
-  <div className="wrap header-inner"><Logo/><nav className="nav-desktop" aria-label="Main navigation">{nav.map(n=><Link className={path===n.href?"current":""} key={n.href} href={n.href}>{n.label}</Link>)}</nav><Link className="header-cta" href="/connect">Connect <ArrowUpRight size={17}/></Link><button type="button" className="menu-trigger" aria-label={open?"Close navigation":"Open navigation"} aria-expanded={open} aria-controls="mobile-navigation" onClick={()=>setOpen(v=>!v)}>{open?<X size={25}/>:<Menu size={25}/>}</button></div>
+  <div className="wrap header-inner"><Logo/><nav className="nav-desktop" aria-label="Main navigation">{nav.map(n=><Link className={path===n.href?"current":""} key={n.href} href={n.href}>{n.label}</Link>)}</nav><Link className="header-cta" href="/connect">Connect <ArrowUpRight size={17}/></Link><button ref={menuButton} type="button" className="menu-trigger" aria-label={open?"Close navigation":"Open navigation"} aria-expanded={open} aria-controls="mobile-navigation" onClick={()=>setOpen(v=>!v)}>{open?<X size={25}/>:<Menu size={25}/>}</button></div>
   <div className={"mobile-navigation"+(open?" show":"")} id="mobile-navigation" aria-hidden={!open}><nav aria-label="Mobile navigation">{nav.map((n,i)=><Link tabIndex={open?0:-1} key={n.href} href={n.href}><small>{String(i+1).padStart(2,"0")}</small>{n.label}<ArrowUpRight size={21}/></Link>)}<Link tabIndex={open?0:-1} href="/connect"><small>07</small>Connect<ArrowUpRight size={21}/></Link></nav><p>Come as you are. There's room for you here.</p></div>
  </header>;
 }
