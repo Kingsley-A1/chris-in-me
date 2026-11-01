@@ -1,10 +1,10 @@
-# Chris in Me Gospel Arena
+# Christ In Me Gospel Arena
 
 **Live concept:** https://chris-in-me.vercel.app
 
 A warm, editorial, responsive and content-rich **church website concept**, designed and engineered by [Bespoke Technologies](https://www.bespoketech.com.ng).
 
-> **Demonstration identity only:** The ministry name is preserved exactly as supplied ("Chris in Me Gospel Arena"). The website does not claim that this is an operating congregation. Services, venue, leadership, sermon recordings, pastoral care, and donation information are not invented or presented as verified. All message texts are original editorial reflections for demonstration; ministry and gathering information is illustrative. Stock imagery is not proof of a real church activity.
+> **Demonstration identity only:** The confirmed display name is **Christ In Me Gospel Arena**. The repository and Vercel hostname retain their established `chris-in-me` identifiers to avoid breaking existing links. The website does not claim that this is an operating congregation. Services, venue, leadership, sermon recordings, pastoral care, and donation information are not invented or presented as verified. All message texts are original editorial reflections for demonstration; ministry and gathering information is illustrative. Stock imagery is not proof of a real church activity.
 
 ## Experience
 
@@ -79,3 +79,6 @@ npm run start
 Images: [Unsplash](https://unsplash.com/license), used as clearly identified illustration only. Fonts: DM Sans and Cormorant Garamond via Google Fonts. Original visual concept and software: **Bespoke Technologies**.
 
 For Honor and For Excellence.
+
+## Mobile navigation and sharing
+The full-screen mobile menu must cover the page on narrow screens; avoid putting `backdrop-filter` on a header containing a fixed-position menu. The Open Graph image is served at `/opengraph-image`, with absolute `og:image` and Twitter image tags on every page.

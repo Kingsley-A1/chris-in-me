@@ -1,7 +1,7 @@
 export const site = {
-  name: "Chris in Me Gospel Arena",
-  shortName: "CHRIS IN ME",
-  eyebrow: "CHRIS IN ME · GOSPEL ARENA",
+  name: "Christ In Me Gospel Arena",
+  shortName: "CHRIST IN ME",
+  eyebrow: "CHRIST IN ME · GOSPEL ARENA",
   tagline: "A place to belong. A faith to grow.",
   description: "A thoughtful digital home for worship, faith, and community — an original church website concept by Bespoke Technologies.",
   notice: "Church website concept by Bespoke Technologies. This is not a verified operating congregation. Sermons, events, ministry information, and photographs are illustrative.",

@@ -1,5 +1,5 @@
-CHRIS IN ME GOSPEL ARENA - WEBSITE LOGO ASSETS
-Original PNG files were captured directly from the current live website header at 6x resolution.
+CHRIST IN ME GOSPEL ARENA - WEBSITE LOGO ASSETS
+PNG files are captured from the current live header at high resolution.
 SVG counterparts are scalable vector recreations of the same symbols and typography, with DM Sans as the intended font.
 Use white assets on dark backgrounds, ink assets on pale backgrounds.
-Church website spells the name CHRIS IN ME. CHRIST IN ME would require a deliberate brand-copy update.
+The correct name is CHRIST IN ME GOSPEL ARENA, not CHRIS IN ME.

@@ -28,7 +28,7 @@ export function ConnectForm(){
  function handleSubmit(e:React.FormEvent<HTMLFormElement>){
   e.preventDefault();const form=e.currentTarget;if(!form.reportValidity())return;
   const data=new FormData(form),get=(key:string)=>String(data.get(key)||"").trim();
-  const message=["Hello Bespoke Technologies,","I visited the Chris in Me Gospel Arena church website concept and would like to discuss a digital project.","","Name: "+get("name"),"Email: "+get("email"),"Interest: "+get("interest"),"","Details: "+get("message")].join("\n");
+  const message=["Hello Bespoke Technologies,","I visited the Christ In Me Gospel Arena church website concept and would like to discuss a digital project.","","Name: "+get("name"),"Email: "+get("email"),"Interest: "+get("interest"),"","Details: "+get("message")].join("\n");
   const url=site.creatorWhatsApp+"?text="+encodeURIComponent(message);
   setMessageUrl(url);window.open(url,"_blank","noopener,noreferrer");
  }

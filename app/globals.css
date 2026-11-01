@@ -322,10 +322,12 @@ button:focus-visible,a:focus-visible,input:focus-visible,textarea:focus-visible,
  .visit-image{height:565px}
 }
 @media(max-width:1050px){
+ /* Keep the fixed mobile menu relative to the viewport, not to the blurred header. */
+ .site-header.is-scrolled{backdrop-filter:none}
  .nav-desktop,.header-cta{display:none}
  .menu-trigger{display:grid;place-items:center;color:white;border:0;background:transparent;padding:12px;margin-left:auto;margin-right:-12px}
  .header-inner{height:84px}
- .mobile-navigation{display:flex;visibility:hidden;opacity:0;transform:translateY(-12px);pointer-events:none;position:fixed;inset:84px 0 0;flex-direction:column;justify-content:space-between;background:#1f3027;overflow:auto;padding:33px max(30px,6vw) 44px;transition:all .25s}
+ .mobile-navigation{display:flex;visibility:hidden;opacity:0;transform:translateY(-12px);pointer-events:none;position:fixed;inset:84px 0 0;z-index:110;flex-direction:column;justify-content:space-between;background:#1f3027;overflow:auto;padding:33px max(30px,6vw) 44px;transition:all .25s}
  .mobile-navigation.show{visibility:visible;opacity:1;transform:translateY(0);pointer-events:auto}
  .mobile-navigation nav{display:flex;flex-direction:column}
  .mobile-navigation nav a{border-bottom:1px solid #ffffff30;padding:10px 0;display:flex;align-items:center;gap:17px;font-size:clamp(30px,5vw,53px);font-weight:550;letter-spacing:-.05em}
