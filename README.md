@@ -1,10 +1,12 @@
 # Christ In Me Gospel Arena
 
-**Live concept:** https://chris-in-me.vercel.app
+**Primary live concept:** https://cim.bespoketech.com.ng
+
+**Vercel fallback:** https://chris-in-me.vercel.app
 
 A warm, editorial, responsive and content-rich **church website concept**, designed and engineered by [Bespoke Technologies](https://www.bespoketech.com.ng).
 
-> **Demonstration identity only:** The confirmed display name is **Christ In Me Gospel Arena**. The repository and Vercel hostname retain their established `chris-in-me` identifiers to avoid breaking existing links. The website does not claim that this is an operating congregation. Services, venue, leadership, sermon recordings, pastoral care, and donation information are not invented or presented as verified. All message texts are original editorial reflections for demonstration; ministry and gathering information is illustrative. Stock imagery is not proof of a real church activity.
+> **Demonstration identity only:** The confirmed display name is **Christ In Me Gospel Arena**. The repository and Vercel fallback hostname retain their established `chris-in-me` identifiers to avoid breaking existing links; the confirmed `cim.bespoketech.com.ng` alias is used for canonical URLs and social previews. The website does not claim that this is an operating congregation. Services, venue, leadership, sermon recordings, pastoral care, and donation information are not invented or presented as verified. All message texts are original editorial reflections for demonstration; ministry and gathering information is illustrative. Stock imagery is not proof of a real church activity.
 
 ## Experience
 

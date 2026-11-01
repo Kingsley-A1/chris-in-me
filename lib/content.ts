@@ -8,7 +8,7 @@ export const site = {
   creator: "Bespoke Technologies",
   creatorUrl: "https://www.bespoketech.com.ng",
   creatorWhatsApp: "https://wa.me/2348088071657",
-  url: "https://chris-in-me.vercel.app",
+  url: "https://cim.bespoketech.com.ng",
 };
 
 const photo=(id:string,w=1400)=>`https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=82`;
